@@ -1,0 +1,13 @@
+import pandas as pd
+
+dados={
+	'Unidades':pd.Series([1,2,3]),
+	'Dezenas':pd.Series([10,20,30]),
+	'Centenas':pd.Series([100,200,300])
+}
+
+df=pd.DataFrame(dados) #Criando o DataFrame
+df['Milhares']=pd.Series([1000,2000,3000])
+print(df['Unidades'])
+
+
